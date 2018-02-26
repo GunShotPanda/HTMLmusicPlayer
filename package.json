@@ -1,0 +1,17 @@
+{
+  "name": "music-play",
+  "version": "1.0.0",
+  "description": "a html music player",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://imudges00lipeiran@github.com:imudges00lipeiran/HTMLmusicPlayer.git"
+  },
+  "dependencies": {
+    "express": "^4.15.4",
+    "mysql": "^2.14.1"
+  }
+}

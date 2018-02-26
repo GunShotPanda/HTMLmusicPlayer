@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>音乐播放器</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background:url(img/QQmusic.jpg) top center no-repeat; background-size:auto 550px;//背景图
+        }
+        #app{
+               width: 320px;
+               height: 400px;
+               border: 1px solid #4EEE94;
+               display: list-item;
+               position: relative;
+           }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+</body>
+<script src="js/muisc_play.js"></script>
+<script>
+    MusicPlayer({
+       el: "app",
+       audioList: [ { title: '想太多',
+           source: 'http://ohnledfyz.bkt.clouddn.com/%E6%9D%8E%E7%8E%96%E5%93%B2%20-%20%E6%83%B3%E5%A4%AA%E5%A4%9A.mp3' },
+           { title: '故梦',
+               source: 'http://ohnledfyz.bkt.clouddn.com/%E4%BC%A6%E6%A1%91%20-%20%E6%95%85%E6%A2%A6.mp3' },
+           { title: '牵丝戏',
+               source: 'http://ohnledfyz.bkt.clouddn.com/%E9%93%B6%E4%B8%B4,Aki%E9%98%BF%E6%9D%B0%20-%20%E7%89%B5%E4%B8%9D%E6%88%8F.mp3' },
+           { title: '夜空中最亮的星',
+               source: 'http://ohnledfyz.bkt.clouddn.com/%E9%80%83%E8%B7%91%E8%AE%A1%E5%88%92%20-%20%E5%A4%9C%E7%A9%BA%E4%B8%AD%E6%9C%80%E4%BA%AE%E7%9A%84%E6%98%9F.mp3' },
+           { title: '不得不爱',
+               source: 'http://ohnledfyz.bkt.clouddn.com/%E6%BD%98%E7%8E%AE%E6%9F%8F,%E5%BC%A6%E5%AD%90%20-%20%E4%B8%8D%E5%BE%97%E4%B8%8D%E7%88%B1.mp3' } ],
+       buttonImgSrc: "./img/musicon.png",//播放图标
+       position: "bottom:10px;left:10px",//右上角
+   });
+   MusicPlayer({
+       el: "body",
+       audioList: "http://ohnledfyz.bkt.clouddn.com/%E6%BD%98%E7%8E%AE%E6%9F%8F,%E5%BC%A6%E5%AD%90%20-%20%E4%B8%8D%E5%BE%97%E4%B8%8D%E7%88%B1.mp3" ,
+       buttonImgSrc: "./img/musicon.png",//播放图标
+       position: "top:10px;right:10px",//右上角
+   });
+</script>
+</html>
